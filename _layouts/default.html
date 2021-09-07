@@ -5,6 +5,9 @@
 
   {% include mathjax-v3.html %}
   <body>
+    {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
+    {% endif %}
 
     {%- include header.html -%}
 
